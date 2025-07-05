@@ -1,0 +1,489 @@
+.header{
+	margin-left: 32px;
+}
+.header-title {
+    color: #00005a;
+    font-size: 25pt;
+    padding-left: 25px;
+    border-left: solid 1px #ccc;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.login-msg{
+	font-size: 10pt;
+	font-style: italic;
+}
+.login-button{
+	 background-color: #dce9f4;
+	 color: #00005a;
+	 border: 1px solid #adb8c0;
+}
+.logoutbutton{
+	 background-color: #dce9f4;
+	 color: #00005a;
+	 margin-left: 10px;
+	 border: 1px solid #00005a
+}
+::part(input-field):focus-within {
+    border: 2px solid #00005a; 
+}
+.section {
+    margin-bottom: 20px;
+}
+.subheader {
+    margin-left: 10px;
+}
+.subheader-text {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.content {
+    margin-left: 15px;
+    font-size: 1em;
+}
+
+.link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: darkblue;
+}
+
+ 
+.section-header {
+    font-size: large;
+    background-color: #97c1e3;
+    color: #00005a;
+    max-width: 40em;
+    padding-left: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.policy{
+	font-weight: bold;
+}
+
+.review-header {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.pending-review-header {
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.label {
+    width: 100px; /* Adjust width to ensure alignment */
+    font-weight: normal;
+}
+
+.number {
+    font-weight: bold;
+}
+
+.progress-bar-button {
+    height: 20px;
+    width: 50px;
+    border: 1px solid #adb8c0;
+    border-radius: 5px;
+    background-color: #d9d9d9;
+}
+
+/*.progress-bar-button::part(bar)  {
+    background-color: #97c1e3;
+}*/
+.progress-bar-button::part(value) /* .vaadin-progress-bar-value*/ {
+    background-color: #dce9f4;
+}
+
+.pending-reviews-layout {
+    margin-left: 2px; /* Adjust margin to align with the review layouts */
+}
+
+
+.label-master {
+    margin-right: 5px;
+}
+
+.value {
+    font-weight: normal;
+    font-weight: bold;
+}
+.custom-grid::part(cell) {
+    border: 1px solid #ddd;
+}
+.grid-container {
+    overflow-x: auto;
+    overflow-y: auto; /* Hide vertical scroll */
+    margin-top: 10px;
+    /*border: 1px solid #ddd; /* Add border for better visibility 
+    padding: 1px;  Add some padding for better look */
+    width: fit-content; /* Adjust width based on content */
+    
+}
+.uploaded-documents-label {
+    margin: 0; /* Remove margin */
+    padding-bottom: 0; /* Ensure no padding at the bottom */
+}
+.policy{
+	font-weight: bold;
+}
+.remove{
+	background-color: #FF4433;
+}
+
+
+
+/* shared-styles.css */
+.policy-label-master{
+	font-size:13px;
+	width: 150px; /* Keep the width to ensure alignment */
+    margin-right: 10px; /* Adjust the space between label and value */
+    display: inline-block; /* Ensure the label behaves correctly */
+}
+
+.policy-value {
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    display: inline-block; /* Ensure the value behaves correctly */
+    margin-left: 0; /* Remove any default margin */
+}
+
+.text-area {
+    width: 420px;
+    background-color:white;
+}
+
+.master-local{
+	text-align: center;
+	background-color:#dce9f4;
+	color:#00005a;
+	font-weight: bold;
+	padding-left: 5px;
+	width: 95%;
+    margin-bottom: 10px;
+}
+.policy-button {
+     margin-top: 0;
+}
+
+.apply-filter{
+	background-color:#dce9f4;
+	color: #11181e;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #adb8c0;
+    border-top-color: #afb8c0;
+    border-bottom-color: #a4aeb8;
+    background-color: #dce9f4;
+    height:32px;
+    cursor:pointer;
+}
+.remove-filter{
+	color: #1a1a1a;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid #c9c9c9;
+    border-top-color: #c9c9c9;
+    border-bottom-color: silver;
+    background-color: white;
+    cursor:pointer;
+    height:32px;
+}
+.policy-review{
+	overflow-x:scroll;
+	height:400px;
+	width:1180px;
+}
+/*.my-grid::part(row[selected]) {
+    background-color: #dce9f4; 
+}
+.my-grid::part(selected-row) {
+    color: #dce9f4; 
+}*/
+
+.review-dialog{
+	font-size:15px;
+}
+.review-cancel{
+	border-radius: 4px;
+    border: 1px solid #c9c9c9;
+    border-top-color: #c9c9c9;
+    border-bottom-color: silver;
+    background-color: white;
+    color: #1a1a1a;
+    font-weight: 400;
+}
+.review-okbutton{
+	background-color:#dce9f4;
+	color: #00005a;
+	border: 1px solid #00005a;
+    border-top-color: #00005a;
+    border-bottom-color: #00005a;
+}
+
+
+/*.separator {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}*/
+/* Styling for the edit icon */
+.edit-icon {
+    cursor: pointer;
+    color: #007bff;
+}
+ 
+.edit-icon:hover {
+    color: #0056b3;
+}
+/*------------------------------------------------------------------------------------------*/
+/* styles.css */
+/* History */
+.anchor-link {
+	text-decoration: underline;
+	color: blue;
+	cursor: pointer;
+	margin-top: 10px;
+}
+/*Approved view*/
+.dropdown-content {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.dropdown-content button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--lumo-body-text-color);
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd;
+}
+.dropdown-button[opened] > * {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Style the separators */
+.dropdown-button .v-button {
+	display: block;
+	text-align: left;
+	width: 100%;
+	background: white;
+	border: 1px solid #c9c9c9;
+	padding: 10px;
+	box-shadow: inset 0 1px 0 white, inset 0 -1px 0 rgb(0, 0, 128), 0 2px 3px
+		rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	margin-bottom: 5px;
+}
+
+.approved-view {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/* styles.css */Approved
+.separator {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+/* Styling for the edit icon */
+.edit-icon {
+    cursor: pointer;
+    color: #007bff;
+}
+
+.edit-icon:hover {
+    color: #0056b3;
+}
+
+.info-label {
+	font-weight: normal;
+	margin-right: 5px;
+}
+
+.info-value {
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+.section-label {
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.v-upload {
+	margin-top: 10px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+	padding: 5px; /* Adding padding to each row */
+}
+
+.row span {
+	display: inline-block;
+}
+
+.master-local-section {
+	width: 45%;
+	padding: 10px; /* Adding padding to Master and Local sections */
+}
+
+.master-local-layout {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	
+}
+
+
+/*LoginView*/
+.header{
+	margin-left: 32px;
+}
+ 
+ 
+.header-title {
+    color: #00005a;
+    font-size: 25pt;
+    padding-left: 25px;
+    border-left: solid 1px #ccc;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 5px;
+} 
+
+/*For New Policy*/
+.new-policy-form-view {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.name-layout {
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.name-field {
+    flex-grow: 1;
+}
+
+.language-combo-box,
+.document-layout,
+.button-layout {
+    margin-top: 10px;
+}
+
+.document-grid {
+    margin-top: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: none;
+}
+
+.new-document-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.new-document-button:hover {
+    background-color: #0056b3;
+}
+
+.uploadButton {
+ 
+    color: #000000; /* Adjust the text color if needed */
+    padding: 8px;
+    border: 1px dashed #007bff; /* Dashed border for the drop area */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #f9f9f9; /* Background color for better visibility */
+    text-align: center; /* Center the text */
+    display: inline-block; /* To apply padding and other styles correctly */
+    margin-left: 10px; /* Space beside the upload button */
+    font-size: 10px; /* Adjust the font size */
+}
+
+
+.button-layout {
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button-layout > .vaadin-button {
+    margin-left: 10px;
+}
+
+.dialog-form-layout {
+    width: 100%;
+}
+
+.dialog-layout {
+    padding: 20px;
+}
+
+.dialog-button-layout {
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.new-document-dialog {
+    width: 400px;
+}
+
+.dialog-name-field {
+    width: 100%;
+}
+
+.checkboxes-layout {
+    padding: 10px 0;
+}
+
+.dialog-add-button,
+.dialog-cancel-button {
+    margin-left: 10px;
+}
+
+.dialog-add-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.dialog-add-button:hover {
+    background-color: #0056b3;
+}
+
+.dialog-cancel-button {
+    background-color: #e0e0e0;
+}
+
+
+
