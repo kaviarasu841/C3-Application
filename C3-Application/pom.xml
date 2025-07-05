@@ -18,6 +18,7 @@
 		<java.version>17</java.version>
 		<vaadin.version>24.3.11</vaadin.version>
 	</properties>
+	<packaging>war</packaging>
 	
 	<repositories>
         <!-- The order of definitions matters. Explicitly defining central here to make sure it has the highest priority. -->
@@ -85,6 +86,7 @@
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-spring-boot-starter</artifactId>
+			<scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.vaadin</groupId>
